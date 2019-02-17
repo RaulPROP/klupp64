@@ -1,12 +1,36 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar [color]="'primary'">
     <ion-title>
-      Ionic Blank
+      Klupp 64
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content [color]="'secondary'">
+    <div class="loading" *ngIf="loading">
+        <ion-spinner></ion-spinner>
+    </div>
+
+    <div class="inputs" *ngIf="!loading">
+
+        <form (ngSubmit)="onLogin()" action="#">
+
+            <ion-item>
+                <ion-label>Usuario</ion-label>
+                <ion-input type="text" [(ngModel)]="user" name="username" [placeholder]="'Usuario'"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Contraseña</ion-label>
+                <ion-input type="password" [(ngModel)]="password" name="password" [placeholder]="'Contraseña'"></ion-input>
+            </ion-item>
+
+            <ion-button [type]="'submit'" [color]="'primary'">
+                Enviar
+            </ion-button>
+
+        </form>
+
+    </div>
+
 </ion-content>
