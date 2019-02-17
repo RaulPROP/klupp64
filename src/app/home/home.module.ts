@@ -14,9 +14,9 @@ import { HomePage } from './home.page';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: HomePage,
       }
-    ])
+    ]),
   ],
   declarations: [HomePage]
 })

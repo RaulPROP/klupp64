@@ -1,0 +1,33 @@
+
+<ion-menu side="start" menuId="custom" class="my-custom-menu" contentId="custom">
+  <ion-content>
+    <ion-list>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/perfil']">
+        <ion-icon name="person"></ion-icon> Perfil
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/jugadas']">
+        <ion-icon name="school"></ion-icon> Jugadas
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/goles']">
+        <ion-icon name="football"></ion-icon> Goles
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/otros']">
+        <ion-icon name="people"></ion-icon> Otros
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar [color]="'primary'">
+    <ion-title>
+      <ion-icon name="menu" (click)="onOpenMenu()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="what">
+    <ion-router-outlet main id="custom"></ion-router-outlet>
+  </div>
+</ion-content>
