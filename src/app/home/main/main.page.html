@@ -2,10 +2,18 @@
 <ion-menu side="start" menuId="custom" class="my-custom-menu" contentId="custom">
   <ion-content>
     <ion-list>
-      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/perfil']">Perfil</ion-item>
-      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/jugadas']">Jugadas</ion-item>
-      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/goles']">Goles</ion-item>
-      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/otros']">Otros</ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/perfil']">
+        <ion-icon name="person"></ion-icon> Perfil
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/jugadas']">
+        <ion-icon name="school"></ion-icon> Jugadas
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/goles']">
+        <ion-icon name="football"></ion-icon> Goles
+      </ion-item>
+      <ion-item class="menu-item" (click)="onCloseMenu()" routerLinkActive="active" [routerLink]="['/main/otros']">
+        <ion-icon name="people"></ion-icon> Otros
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>

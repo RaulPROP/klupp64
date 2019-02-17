@@ -20,8 +20,15 @@
   justify-content: space-evenly;
 }
 
-.menu-item.active {
-  color: var(--ion-color-primary);
+.menu-item {
+  ion-icon {
+    color: inherit;
+    margin-right: 10px;
+  }
+
+  &.active {
+    color: var(--ion-color-primary);
+  }
 }
 
 .my-custom-menu {
